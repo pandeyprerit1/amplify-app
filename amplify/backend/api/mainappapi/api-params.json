@@ -1,0 +1,51 @@
+{
+    "paths": [
+        {
+            "name": "/people",
+            "lambdaFunction": "mainlambda",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/people"
+        },
+        {
+            "name": "/coins",
+            "lambdaFunction": "mainlambda",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            },
+            "policyResourceName": "/coins"
+        }
+    ],
+    "resourceName": "mainappapi",
+    "apiName": "mainappapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "mainlambda"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-myslsapp-dev-130319-authRole",
+        "unAuthRoleName": "amplify-myslsapp-dev-130319-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "mainlambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "03a3f008"
+}

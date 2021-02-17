@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-myslsapp-dev-130319-authRole",
+      "UnauthRoleArn": "arn:aws:iam::147094247395:role/amplify-myslsapp-dev-130319-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::147094247395:role/amplify-myslsapp-dev-130319-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-myslsapp-dev-130319-deployment",
+      "UnauthRoleName": "amplify-myslsapp-dev-130319-unauthRole",
+      "StackName": "amplify-myslsapp-dev-130319",
+      "StackId": "arn:aws:cloudformation:eu-west-2:147094247395:stack/amplify-myslsapp-dev-130319/4022bac0-7029-11eb-bf39-0643b76cd30e",
+      "AmplifyAppId": "d3v10pncniqvz3"
+    },
+    "categories": {
+      "function": {
+        "mainlambda": {
+          "deploymentBucketName": "amplify-myslsapp-dev-130319-deployment",
+          "s3Key": "amplify-builds/mainlambda-6b2b7930436b4469594b-build.zip"
+        }
+      },
+      "auth": {
+        "myslsapp3ca1db8f": {}
+      }
+    }
+  }
+}
